@@ -22,7 +22,8 @@ export default {
       dropzoneOptions: {
           url: 'http://file-demo.giraffe3d.com/upload/lecture/video/test-vue-dropzone',
           paramName: "lecture-video",
-          timeout: 1000 * 60 * 60 * 2 // 2 Hours for max 4GB file on slow connection.
+          timeout: 1000 * 60 * 60 * 2, // 2 Hours for max 4GB file on slow connection.
+          maxFilesize: 4096, // Max Upload 4GB
       }
     }
   }
