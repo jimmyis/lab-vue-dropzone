@@ -1,6 +1,10 @@
 <template>
   <div id="app">
-    <vue-dropzone ref="myVueDropzone" id="dropzone" :options="dropzoneOptions"></vue-dropzone>
+    <vue-dropzone
+      ref="myVueDropzone"
+      id="dropzone"
+      :options="dropzoneOptions"
+    ></vue-dropzone>
   </div>
 </template>
 
@@ -13,13 +17,11 @@ export default {
   components: {
     vueDropzone: vue2Dropzone
   },
-  data: function () {
+  data() {
     return {
       dropzoneOptions: {
-          url: 'https://httpbin.org/post',
-          thumbnailWidth: 150,
-          maxFilesize: 0.5,
-          headers: { "My-Awesome-Header": "header value" }
+          url: 'http://file-demo.giraffe3d.com/upload/lecture/video/test-vue-dropzone',
+          paramName: "lecture-video"
       }
     }
   }
